@@ -13,7 +13,7 @@ import csv
 # load the training data
 data = pd.read_csv('tracks.csv')
 
-# if your computer doesn't have enough RAM, comment out the above line and uncomment the below line to load the entire dataset
+# if your computer doesn't have enough RAM, comment out the above line and uncomment the below line to load only a part of the dataset
 # data = pd.read_csv('tracks.csv', nrows=200000)
 orig_data = data.to_numpy()
 
