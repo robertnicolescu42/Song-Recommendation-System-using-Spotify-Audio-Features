@@ -18,8 +18,8 @@ Next, download the model from [here](https://www.kaggle.com/general/153757) and 
 
 First, write the Spotify url of your base track in the **song_url** variable to get its audio features, then run the script.py file to start the program. You should now be able to use the Spotify Playlist Recommender.
 
-Contributing
+# Contributing
 Please feel free to fork this repository and contribute by submitting a pull request to enhance the functionality.
 
-License
+# License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
