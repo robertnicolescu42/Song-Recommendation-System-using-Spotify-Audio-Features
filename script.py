@@ -34,10 +34,12 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 original_song_features = {}
 
 
-def get_song_features(song_url):
+def get_song_features():
     global original_song_features
+    song_url = input(
+        "Please enter the Spotify URL of the song you want to get features for: ")
     # extract the Spotify ID from the song URL
-    song_id = song_url.split('/')[-1]
+    song_id = song_url.split('/')[-1].split('?')[0]
 
     # audio features of the song
     track_info = sp.track(song_id)
@@ -56,7 +58,6 @@ def get_song_features(song_url):
         'liveness': audio_features['liveness'],
         'valence': audio_features['valence'],
         'tempo': audio_features['tempo'],
-        # 'duration_ms': track_info['duration_ms'],
         'time_signature': audio_features['time_signature']
     }
     return track_features
@@ -93,7 +94,6 @@ def recommend_songs(audio_features, n=10, filename='recommended_songs.csv'):
             "name": original_song[1],
             "artists": original_song[5],
         })
-
     # Spotify URL column
     recommended_songs_data['spotify_url'] = [
         'https://open.spotify.com/track/' + song['id'] for song in songs_list]
@@ -124,7 +124,6 @@ def find_original_song(id):
 
 
 # example usage
-song_url = 'https://open.spotify.com/track/7y8X0Z04gJCKtfrnSAMywJ'
-song_features = get_song_features(song_url)
+song_features = get_song_features()
 recommended_songs = recommend_songs(song_features)
 # print(recommended_songs)
