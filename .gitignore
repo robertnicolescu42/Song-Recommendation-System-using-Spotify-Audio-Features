@@ -1,0 +1,10 @@
+simple_recommend.py
+tracks.csv
+vars.py
+__pycache__/vars.cpython-39.pyc
+artists.csv
+auth.py
+dict_artists.json
+mlproj.7z
+oldscript.py
+.cache

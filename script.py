@@ -121,7 +121,7 @@ def find_original_song(id):
 
 
 # example usage
-song_url = 'https://open.spotify.com/track/6220rBuMBMeJExA503QKaP'
+song_url = 'https://open.spotify.com/track/7y8X0Z04gJCKtfrnSAMywJ'
 song_features = get_song_features(song_url)
 recommended_songs = recommend_songs(song_features)
 # print(recommended_songs)
