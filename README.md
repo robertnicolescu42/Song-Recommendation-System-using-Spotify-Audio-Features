@@ -21,5 +21,8 @@ First, write the Spotify url of your base track in the **song_url** variable to 
 # Contributing
 Please feel free to fork this repository and contribute by submitting a pull request to enhance the functionality.
 
+# Presentation
+[Here](https://docs.google.com/presentation/d/1juQ_OosCh2R01swql2PKf-_r5L0mXQgUzVuCTZcdEKA/edit?usp=sharing) you can find an overview of this project.
+
 # License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
